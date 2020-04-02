@@ -1,0 +1,15 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <h1>Ultimi post</h1>
+    <div class="posts">
+      {% for post in posts %}
+        <div class="post">
+          <h2><a href="{% url 'posts:post_singolo' slug=post.slug %}">{{ post.title }}</a></h2>
+          <p>{{ post.snippet }}</p>
+          <p>{{ post.date }}</p>
+          <p class="author">caricato da {{post.author.username}}</p>
+        </div>
+      {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,160 @@
+body {
+  background-color: #ff9933;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+body * {
+  font-family: Roboto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  margin: 0;
+}
+a, a:hover, a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+/*---------------------------HOMEPAGE LISTA POST-----------------------------**/
+/**Spazio vuoto ai lati su schermo 1280px**/
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/** "Ultimi post" **/
+div.wrapper h1 {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 2.4em;
+}
+
+/**GRIGLIA HEADER**/
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+}
+
+/*PULSANTI NAVBAR*/
+nav{
+  justify-self: end;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav button{
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  font-size: 1em;
+}
+
+/**GRIGLIA DETTAGLI POSTS**/
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.post{
+  padding: 10px;
+  border: 1px solid #8c9f43;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/**DETTAGLI POSTS**/
+.post h2{
+  font-size:1.5em;
+}
+
+.post .author{
+  padding: 10px;
+  background: #8c9f43;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  color: black;
+}
+
+/**------------------------------POST SINGOLO--------------------------------**/
+
+.post-detail .post{
+  padding: 0;
+}
+
+.post-detail .post img{
+  max-width: 100
+}
+
+.post-detail .post h2{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+}
+
+.post-detail .post p{
+    text-align: center;
+}
+
+/**----------------FORM(LOG-IN,SIGNUP,CREA ARTICOLO)-------------**/
+
+.site-form{
+  margin-top: 60px;
+  border: 1px solid #8c9f43;
+  padding: 20px;
+}
+
+/**TASTINO 'CREA ARTICOLO'**/
+a.highlight{
+  border: 1px solid #8c9f43;
+  padding: 10px;
+  border-radius: 4px;
+  color: #8c9f43;
+}
+
+/**CREA ARTICOLO**/
+.site-form input, .site-form textarea{
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px;
+}
+
+.helptext, .helptext ul{
+  margin: 0 auto 20px;
+  color: #bbb;
+  font-size: 0.9em;
+  display: block;
+}
+
+/***ERRORI NEI FORM****/
+.errorlist li{
+  padding: 10px;
+  list-style-type: none;
+  border: 1px solid #ff5722;
+  color: #ff5722;
+  margin: 10px 0;
+}
+
+.errorlist{
+  padding: 0;
+}
+
+/***TASTI DI INPUT NEI FORM****/
+.site-form input[type="submit"]{
+  background: #8c9f43;
+  border: 0;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 10px 0;
+}
